@@ -1,8 +1,9 @@
+
 <template>
   <div id="app" class="antialiased">
     HELLLLOOO
     <component :is="this.$route.meta.layout">
-      <router-view />
+      <RouterView />
     </component>
   </div>
 </template>

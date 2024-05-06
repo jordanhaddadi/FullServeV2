@@ -1,12 +1,12 @@
 import Vue from 'vue'
-import Router from 'vue-router'
+import VueRouter from 'vue-router'
 import DestinationCard from '../components/DestinationCard.vue'
 import PropertyCard from '../components/PropertyCard.vue'
 import Home from '../views/Home.vue'
 
-Vue.use(Router)
+Vue.use(VueRouter) 
 
-export default new Router({
+const router = new VueRouter({
   mode: 'history',
   scrollBehavior: () => ({ y: 0 }),
   routes: [
@@ -30,3 +30,5 @@ export default new Router({
     }
   ]
 })
+
+export default router
